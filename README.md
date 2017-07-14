@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **项目说明** 
 - renren-security是一个轻量级权限管理系统，其核心设计目标是开发迅速、学习简单、轻量级、易扩展
 - 使用renren-security搭建项目，只需编写30%左右代码，其余的代码交给系统自动生成
@@ -109,3 +110,7 @@ renren-security
 
 
 ![捐赠](http://cdn.renren.io/donate.jpg "捐赠") 
+=======
+# renren
+renren
+>>>>>>> branch 'master' of https://github.com/zdz78/renren.git
