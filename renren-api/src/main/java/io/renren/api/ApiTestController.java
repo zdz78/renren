@@ -5,6 +5,9 @@ import io.renren.annotation.LoginUser;
 import io.renren.entity.UserEntity;
 import io.renren.utils.R;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,6 +29,15 @@ public class ApiTestController {
     @GetMapping("userInfo")
     public R userInfo(@LoginUser UserEntity user){
         return R.ok().put("user", user);
+    }
+    
+    @GetMapping("test")
+    public R test(){
+    	Map<String,Object> map = new HashMap<>();
+    	map.put("name", "Mr.Zhang");
+    	map.put("age", 25);
+    	map.put("sex", "男");
+        return R.ok().put("user", map);
     }
 
     /**
